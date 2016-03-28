@@ -98,4 +98,9 @@ public class face extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void showAlert(View view) {
+        // Show a plain alert
+        alerts.showAlert(this, "Are you sure ?");
+    }
 }
