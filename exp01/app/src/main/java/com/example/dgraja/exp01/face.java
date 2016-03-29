@@ -1,5 +1,6 @@
 package com.example.dgraja.exp01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.dgraja.exp01.category.prompts;
 
 public class face extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -99,8 +102,18 @@ public class face extends AppCompatActivity
         return true;
     }
 
-    public void showAlert(View view) {
+    public void navCategoryDialogs(View view) {
+        // Goto category prompt dialogs
+        Intent intent = new Intent(this, prompts.class);
+        startActivity(intent);
+    }
+
+    public void showPrompt(View view) {
         // Show a plain alert
-        alerts.showAlert(this, "Are you sure ?");
+        alerts.showPrompt(this, "Are you sure ?");
+    }
+    public void showBlockingAlert(View view) {
+        // Show a plain alert
+        alerts.showBlockingAlert(this, "Click ok to continue ...");
     }
 }
