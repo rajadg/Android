@@ -207,7 +207,6 @@ public class prompts extends AppCompatActivity {
     public void alertSimpleList(View view) {
         CharSequence []lst = new CharSequence[] { "item 1", "item 2", "item 3" };
         alerts.displayListAlert(this, "Here is the list:", lst, new DialogInterface.OnClickListener() {
-            @Override
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(prompts.this, "Item selected", Toast.LENGTH_SHORT);
             }

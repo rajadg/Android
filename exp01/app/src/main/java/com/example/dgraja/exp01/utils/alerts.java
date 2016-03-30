@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.dgraja.exp01.R;
@@ -66,15 +67,22 @@ public class alerts {
 
     public static void displayListAlert(Context ctx, CharSequence title, CharSequence []options, DialogInterface.OnClickListener selectCallback) {
         context = ctx;
+        Log.e("exp01", "entering displayListAlert ...");
         AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
-        builder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(context, "Done clicked", Toast.LENGTH_SHORT);
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Log.e("exp01", "Ok button clicked !!");
+                Toast.makeText(context, "Done clicked", Toast.LENGTH_SHORT).show();
             }
         });
         builder.setTitle(title);
-        builder.setItems(options, selectCallback);
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.e("exp01", "Some list item selected.");
+                Toast.makeText(context, "Item selected", Toast.LENGTH_SHORT).show();
+            }
+        });
         builder.setIcon(R.mipmap.ic_list_01);
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
