@@ -15,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.dgraja.exp01.category.prompts;
+import com.example.dgraja.exp01.category.wizard_finish;
+import com.example.dgraja.exp01.utils.alerts;
 
 public class face extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -106,6 +108,15 @@ public class face extends AppCompatActivity
         // Goto category prompt dialogs
         Intent intent = new Intent(this, prompts.class);
         startActivity(intent);
+    }
+
+    public void navCategoryWizardComplete(View view) {
+        // Goto category prompt dialogs
+        Intent intent = new Intent(this, wizard_finish.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("EXIT", true);
+        startActivity(intent);
+        this.finish();
     }
 
     public void showPrompt(View view) {

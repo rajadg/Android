@@ -22,7 +22,8 @@
             android:name=".category.prompts"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_prompts"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".category.wizard_finish"></activity>
     </application>
 
 </manifest>

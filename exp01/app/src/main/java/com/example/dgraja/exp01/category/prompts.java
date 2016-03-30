@@ -2,7 +2,6 @@ package com.example.dgraja.exp01.category;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.dgraja.exp01.R;
-import com.example.dgraja.exp01.alerts;
+import com.example.dgraja.exp01.utils.alerts;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -201,6 +200,16 @@ public class prompts extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(prompts.this, "do not close", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    public void alertSimpleList(View view) {
+        CharSequence []lst = new CharSequence[] { "item 1", "item 2", "item 3" };
+        alerts.displayListAlert(this, "Here is the list:", lst, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(prompts.this, "Item selected", Toast.LENGTH_SHORT);
             }
         });
     }
