@@ -76,13 +76,7 @@ public class alerts {
             }
         });
         builder.setTitle(title);
-        builder.setItems(options, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Log.e("exp01", "Some list item selected.");
-                Toast.makeText(context, "Item selected", Toast.LENGTH_SHORT).show();
-            }
-        });
+        builder.setItems(options, selectCallback);
         builder.setIcon(R.mipmap.ic_list_01);
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
