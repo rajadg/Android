@@ -82,4 +82,22 @@ public class alerts {
         alertDialog.show();
         return;
     }
+
+    public static void displayMutiChoiceAlert(Context ctx,
+                                              CharSequence title,
+                                              CharSequence []options,
+                                              boolean[] states,
+                                              DialogInterface.OnMultiChoiceClickListener selectCallback,
+                                              DialogInterface.OnClickListener okCallback) {
+        context = ctx;
+        Log.e("exp01", "entering displayMutiChoiceAlert ...");
+        AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+        builder.setPositiveButton("Ok", okCallback);
+        builder.setTitle(title);
+        builder.setMultiChoiceItems(options, states, selectCallback);
+        builder.setIcon(R.mipmap.ic_checked_list);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        return;
+    }
 }

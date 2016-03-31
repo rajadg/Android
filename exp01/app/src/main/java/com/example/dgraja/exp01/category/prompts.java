@@ -1,11 +1,13 @@
 package com.example.dgraja.exp01.category;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -206,11 +208,40 @@ public class prompts extends AppCompatActivity {
 
     public CharSequence []simpleList;
     public void alertSimpleList(View view) {
-        simpleList = new CharSequence[] { "lion", "tiger", "wolf", "hyena", "leopard", "rhino", "elephant", "hippo" };
-        alerts.displayListAlert(this, "Here is the list:", simpleList, new DialogInterface.OnClickListener() {
+        simpleList = new CharSequence[] { "lion", "tiger", "wolf", "hyena", "leopard", "rhino", "elephant", "hippo", "wild beast", "bison", "Oryx", "deer", "cheetah", "Ostrich" };
+        alerts.displayListAlert(this, "Select an animal :", simpleList, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(prompts.this, "Item selected: " + simpleList[which], Toast.LENGTH_SHORT).show();
             }
         });
     }
+
+    public CharSequence []multiList;
+    public boolean []multiChoice;
+    public void alertMultiChoiceList(View view) {
+        multiList = new CharSequence[] { "lion", "tiger", "wolf", "hyena", "leopard", "rhino", "elephant", "hippo", "wild beast", "bison", "Oryx", "deer", "cheetah", "Ostrich" };
+        multiChoice = new boolean[] { false, false, false, false, false, false, false, false, false, false, false, false, false, false};
+        DialogInterface.OnClickListener okCallback = new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Log.e("exp01", "Multi select alert completed...");
+                String selected = "";
+                for (int i=0; i<multiChoice.length; i++) {
+                    if (multiChoice[i] == true) {
+                        selected = selected + ", " + multiList[i];
+                    }
+                }
+                Log.e("exp01", "Multi select result: " + selected);
+                Toast.makeText(prompts.this, "selections: " + selected, Toast.LENGTH_SHORT).show();
+            }
+        };
+        DialogInterface.OnMultiChoiceClickListener selectCallback = new DialogInterface.OnMultiChoiceClickListener() {
+            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                multiChoice[which] = isChecked;
+                Log.w("exp01", "Item selected: " + multiList[which]);
+                //Toast.makeText(prompts.this, "Item selected: " + multiList[which], Toast.LENGTH_SHORT).show();
+            }
+        };
+        alerts.displayMutiChoiceAlert(this, "Select some animals:", multiList, multiChoice, selectCallback, okCallback);
+    }
+
 }
