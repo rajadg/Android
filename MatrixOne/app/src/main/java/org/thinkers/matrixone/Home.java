@@ -1,5 +1,6 @@
 package org.thinkers.matrixone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ToggleButton;
+import android.app.AlertDialog;
 
 public class Home extends AppCompatActivity {
 
@@ -48,5 +51,28 @@ public class Home extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClickToggle(View view) {
+        // The toggle button is clicked
+        ToggleButton btnToggle = (ToggleButton) findViewById(R.id.toggleButtonShow);
+        btnToggle.setTextOff("yes");
+        Intent myIntent = new Intent(view.getContext(), slider.class);
+        startActivityForResult(myIntent, 0);
+        return;
+    }
+
+    public void onClickStatus(View view) {
+        // The toggle button is clicked
+        ToggleButton btnStatus = (ToggleButton) findViewById(R.id.toggleButtonStatus);
+        btnStatus.setTextOff("off");
+        btnStatus.setTextOn("on");
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setMessage(btnStatus.getText());
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+        return;
     }
 }

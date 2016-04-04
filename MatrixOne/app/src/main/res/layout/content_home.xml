@@ -16,4 +16,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickToggle"
+        android:text="@string/app_name"
+        android:textOff="Show"
+        android:textOn="Hide"
+        android:textStyle="bold"
+        android:checked="false" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:onClick="onClickStatus"
+        android:text="@string/app_name"
+        android:textOff="true"
+        android:textOn="false"
+        android:textStyle="bold"
+        android:checked="false" />
 </RelativeLayout>
