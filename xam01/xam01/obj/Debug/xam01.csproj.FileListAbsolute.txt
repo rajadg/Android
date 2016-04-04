@@ -1,0 +1,14 @@
+E:\Git\rajadg\xam01\xam01\bin\Debug\xam01.dll
+E:\Git\rajadg\xam01\xam01\bin\Debug\xam01.pdb
+E:\Git\rajadg\xam01\xam01\bin\Debug\xam01.xam01.apk
+E:\Git\rajadg\xam01\xam01\bin\Debug\xam01.xam01-Signed.apk
+E:\Git\rajadg\xam01\xam01\obj\Debug\xam01.dll
+E:\Git\rajadg\xam01\xam01\obj\Debug\xam01.pdb
+E:\Git\rajadg\xam01\xam01\obj\Debug\android\bin\xam01.xam01.apk
+E:\Git\rajadg\xam01\xam01\obj\Debug\res\layout\main.xml
+E:\Git\rajadg\xam01\xam01\obj\Debug\res\values\strings.xml
+E:\Git\rajadg\xam01\xam01\obj\Debug\res\drawable\icon.png
+E:\Git\rajadg\xam01\xam01\obj\Debug\R.cs.flag
+E:\Git\rajadg\xam01\xam01\obj\Debug\uploadflags.txt
+E:\Git\rajadg\xam01\xam01\obj\Debug\xam01.dll.mdb
+E:\Git\rajadg\xam01\xam01\bin\Debug\xam01.dll.mdb

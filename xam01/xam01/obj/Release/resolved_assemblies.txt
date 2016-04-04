@@ -1,0 +1,8 @@
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\xam01.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\Mono.Android.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\mscorlib.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\System.Core.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\System.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\System.Xml.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\System.Runtime.Serialization.dll
+E:\Git\rajadg\xam01\xam01\obj\Release\android\assets\System.ServiceModel.Internals.dll
