@@ -1,9 +1,0 @@
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\xam01.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\Mono.Android.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\mscorlib.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\System.Core.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\System.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\System.Xml.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\System.Xml.Linq.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\System.Runtime.Serialization.dll
-E:\Git\rajadg\xam01\xam01\obj\Debug\assemblies\System.ServiceModel.Internals.dll

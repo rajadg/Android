@@ -1,4 +1,0 @@
-xam01.MainActivity, xam01;md5fe000b9d911f96460af41f6814b047d2.MainActivity
-xam01.MainActivity, xam01, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe000b9d911f96460af41f6814b047d2.MainActivity
-xam01.MainActivity;md5fe000b9d911f96460af41f6814b047d2.MainActivity
-xam01.MainActivity;md5fe000b9d911f96460af41f6814b047d2.MainActivity
