@@ -25,6 +25,16 @@ namespace xam01
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+
+            FindViewById<Button>(Resource.Id.btnPrompt).Click += delegate {
+                StartActivity(typeof(prompts));
+            };
+
+        }
+
+        private void MainActivity_Click(object sender, EventArgs e)
+        {
+           // StartActivity(Resource.)
         }
     }
 }

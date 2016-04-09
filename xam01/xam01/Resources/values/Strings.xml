@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">xam01</string>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">xam01</string>
+  <string name="row2Button">row 2 button</string>
+  <string name="secondRow">second row</string>
+  <string name="button">Button</string>
+  <string name="basicAlert">basic alert</string>
+  <string name="basicPrompt">basic prompt</string>
 </resources>
