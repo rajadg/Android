@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -33,6 +34,14 @@ namespace xam01
         private void BtnPrompt_Click(object sender, EventArgs e)
         {
             System.Console.WriteLine("Clicked on basic prompt button");
+            //Page.DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.SetTitle("Question");
+            builder.SetPositiveButton("Ok", 
+                (senderAlert, args) => {
+                    Console.WriteLine("ok clicked");
+                });
+            builder.Create().Show();
         }
 
     }
