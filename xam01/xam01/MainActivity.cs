@@ -30,6 +30,9 @@ namespace xam01
                 StartActivity(typeof(prompts));
             };
 
+
+            FindViewById<Button>(Resource.Id.main_start_datalite).Click += delegate { StartActivity(typeof(datalite)); };
+
         }
 
         private void MainActivity_Click(object sender, EventArgs e)

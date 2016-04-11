@@ -7,4 +7,10 @@
   <string name="button">Button</string>
   <string name="basicAlert">basic alert</string>
   <string name="basicPrompt">basic prompt</string>
+  <string name="add">Add</string>
+  <string name="edit">edit</string>
+  <string name="name">Name</string>
+  <string name="dept">Dept</string>
+  <string name="samples">Samples</string>
+  <string name="dataLite">Data Lite</string>
 </resources>

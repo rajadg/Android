@@ -60,23 +60,41 @@ namespace xam01
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
-			
-			// aapt resource value: 0x7f050004
-			public const int btnBasicAlert = 2131034116;
-			
 			// aapt resource value: 0x7f050005
-			public const int btnBasicPrompt = 2131034117;
+			public const int MyButton = 2131034117;
 			
-			// aapt resource value: 0x7f050002
-			public const int btnPrompt = 2131034114;
+			// aapt resource value: 0x7f05000a
+			public const int btnBasicAlert = 2131034122;
 			
-			// aapt resource value: 0x7f050001
-			public const int button1 = 2131034113;
+			// aapt resource value: 0x7f05000b
+			public const int btnBasicPrompt = 2131034123;
+			
+			// aapt resource value: 0x7f050007
+			public const int btnPrompt = 2131034119;
+			
+			// aapt resource value: 0x7f050006
+			public const int button1 = 2131034118;
 			
 			// aapt resource value: 0x7f050003
-			public const int linearLayout2 = 2131034115;
+			public const int data_add_btn = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int data_edit_btn = 2131034116;
+			
+			// aapt resource value: 0x7f050002
+			public const int data_edit_dept = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int data_edit_name = 2131034113;
+			
+			// aapt resource value: 0x7f050009
+			public const int linearLayout2 = 2131034121;
+			
+			// aapt resource value: 0x7f050008
+			public const int main_start_datalite = 2131034120;
+			
+			// aapt resource value: 0x7f050000
+			public const int textView1 = 2131034112;
 			
 			static Id()
 			{
@@ -92,10 +110,13 @@ namespace xam01
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int datalite = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int prompts = 2130903041;
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int prompts = 2130903042;
 			
 			static Layout()
 			{
@@ -116,6 +137,9 @@ namespace xam01
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
 			
+			// aapt resource value: 0x7f040007
+			public const int add = 2130968583;
+			
 			// aapt resource value: 0x7f040005
 			public const int basicAlert = 2130968581;
 			
@@ -125,8 +149,23 @@ namespace xam01
 			// aapt resource value: 0x7f040004
 			public const int button = 2130968580;
 			
+			// aapt resource value: 0x7f04000c
+			public const int dataLite = 2130968588;
+			
+			// aapt resource value: 0x7f04000a
+			public const int dept = 2130968586;
+			
+			// aapt resource value: 0x7f040008
+			public const int edit = 2130968584;
+			
+			// aapt resource value: 0x7f040009
+			public const int name = 2130968585;
+			
 			// aapt resource value: 0x7f040002
 			public const int row2Button = 2130968578;
+			
+			// aapt resource value: 0x7f04000b
+			public const int samples = 2130968587;
 			
 			// aapt resource value: 0x7f040003
 			public const int secondRow = 2130968579;
