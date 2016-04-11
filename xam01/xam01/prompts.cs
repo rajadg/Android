@@ -24,22 +24,39 @@ namespace xam01
             SetContentView(Resource.Layout.prompts);
 
             Button btnAlert = FindViewById<Button>(Resource.Id.btnBasicAlert);
-            btnAlert.Click += delegate { System.Console.WriteLine("clicked alert button");  };
+            btnAlert.Click += BtnAlert_Click;
 
             Button btnPrompt = FindViewById<Button>(Resource.Id.btnBasicPrompt);
             btnPrompt.Click += BtnPrompt_Click;
 
         }
 
+        private void BtnAlert_Click(object sender, EventArgs e)
+        {
+            System.Console.WriteLine("Clicked on alert button");
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.SetTitle("Information");
+            builder.SetMessage("Sample alert message");
+            builder.SetPositiveButton("Ok",
+                (senderAlert, args) => {
+                    Console.WriteLine("ok clicked");
+                });
+            builder.Create().Show();
+        }
+
         private void BtnPrompt_Click(object sender, EventArgs e)
         {
             System.Console.WriteLine("Clicked on basic prompt button");
-            //Page.DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.SetTitle("Question");
-            builder.SetPositiveButton("Ok", 
+            builder.SetTitle("Please Confirm");
+            builder.SetMessage("Are you sure you want to continue ?");
+            builder.SetPositiveButton("Yes",
                 (senderAlert, args) => {
-                    Console.WriteLine("ok clicked");
+                    Console.WriteLine("Yes clicked");
+                });
+            builder.SetNegativeButton("No",
+                (senderAlert, args) => {
+                    Console.WriteLine("No clicked");
                 });
             builder.Create().Show();
         }
